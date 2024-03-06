@@ -80,7 +80,7 @@ Incluídos ícones para representar visualmente as informações dos ramais e do
 Para solucionar o este desafio utilizei o ambiente do Xampp para rodar o Apache e o MySQL.
 Antes de começar, caso queira seguir o passo a passo, tenha em sua máquina o Xampp instalado para mais informações acesse [XAMPP](https://www.apachefriends.org/pt_br/index.html).
 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) e o [Git](https://git-scm.com) para clonar o projeto em sua máquina.
 
 ### 🎲 Rodando o Projeto
 
@@ -117,7 +117,7 @@ http://localhost/phpmyadmin/index.php?route=/server/databases
 4. Selecione a opção "importar".
 5. Selecione o arquivo l5_network.sql fornecido na pasta.
 
-![alt text](View/assets/imgs/iniciarServer.png)
+![alt text](View/assets/imgs/importarBanco.png)
 
 6. No final da página, clique no botão "importar" para importar o arquivo SQL.
 
