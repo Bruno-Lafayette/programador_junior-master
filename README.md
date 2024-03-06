@@ -78,39 +78,56 @@ Incluídos ícones para representar visualmente as informações dos ramais e do
 ### Pré-requisitos
 
 Para solucionar o este desafio utilizei o ambiente do Xampp para rodar o Apache e o MySQL.
-Antes de começar, caso queira seguir o passo a passo, tenha em sua máquina o Xampp instalado para mais informações acesse [XAMPP](https://www.apachefriends.org/pt_br/index.html)
+Antes de começar, caso queira seguir o passo a passo, tenha em sua máquina o Xampp instalado para mais informações acesse [XAMPP](https://www.apachefriends.org/pt_br/index.html).
+
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 ### 🎲 Rodando o Projeto
 
+#### Clonando o Repositório
+1. Abra o terminal.
+2. Navegue até o diretório do XAMPP usando o comando cd.
+3. Em seguida, navegue até o diretório htdocs com o comando cd htdocs.
+4. Clone o repositório do GitHub usando o comando:
 ```bash
-# Clone este repositório
-$ git clone https://github.com/Bruno-Lafayette/web-store.git
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd web-store 
-
-# Instale as dependências
-$ npm install
-
-# Execute o Json Server para simular a API
-$ npx json-server db.json
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev
-
-# A aplicação irá rodar na porta:5174 - acesse <hhttp://localhost:5174>
-# A API vai subir na porta 3000 <http://localhost:3000/>
+git clone https://github.com/Bruno-Lafayette/programador_junior-master.git
 ```
 
+#### Configurando o Servidor no XAMPP
 
+1. Abra o aplicativo XAMPP.
+2. No painel de controle, clique em **'Manage Servers'**.
+3. Em seguida, clique em **'start all'** para iniciar todos os servidores.
 
+![alt text](View/assets/imgs/iniciarServer.png)
 
+#### Configurando o Banco de Dados
 
+1. Abra um navegador e acesse a URL:
 
+```bash
+http://localhost/phpmyadmin/index.php?route=/server/databases
+```
 
+2. Crie um novo banco de dados com o nome l5_network.
 
+![alt text](View/assets/imgs/criarBanco.png)
 
+3. No lado direito, selecione o banco de dados l5_network.
+4. Selecione a opção "importar".
+5. Selecione o arquivo l5_network.sql fornecido na pasta.
 
+![alt text](View/assets/imgs/iniciarServer.png)
 
- 
+6. No final da página, clique no botão "importar" para importar o arquivo SQL.
+
+#### Executando o Sistema
+
+1. Após concluir os passos anteriores sem erros, abra um navegador da sua preferência.
+2. Cole a seguinte URL na barra de endereço:
+
+```Bash
+http://localhost/programador_junior-master/
+```
+
+3. O sistema estará pronto para uso.
