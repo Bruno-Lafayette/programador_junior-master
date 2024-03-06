@@ -1,0 +1,147 @@
+.container h1 {
+    margin-top: 26px;
+}
+/* CARTÕES */
+
+.cartaoDisponivel {
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(176, 176, 176);
+    background-color: #04ea0420;
+    float: left;
+    position: relative;
+    padding: 8px;
+    margin: 8px;
+}
+
+.cartaoOcupado {
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(176, 176, 176);
+    background-color: #ff000020;
+    float: left;
+    position: relative;
+    padding: 8px;
+    margin: 8px;
+}
+
+.cartaoPausa {
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(176, 176, 176);
+    background-color: #ff990020;
+    float: left;
+    position: relative;
+    padding: 8px;
+    margin: 8px;
+}
+
+.cartaoChamando {
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(176, 176, 176);
+    background-color: #ff000020;
+    float: left;
+    position: relative;
+    padding: 8px;
+    margin: 8px;
+}
+
+.cartaoIndisponivel {
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    float: left;
+    box-shadow: 2px 2px 2px 2px rgb(176, 176, 176);
+    position: relative;
+    padding: 5px;
+    margin: 8px;
+    background-color: #d7d7d7;
+    cursor: pointer;
+}
+
+/* HOVER DOS CARTÕES */
+
+.cartaoIndisponivel:hover {
+    transition-duration: .5s;
+    background-color: #c0c0c0;
+    cursor: pointer;
+}
+
+.cartaoChamando:hover {
+    transition-duration: .5s;
+    background-color: #ff000040;
+    cursor: pointer;
+}
+
+.cartaoPausa:hover {
+    transition-duration: .5s;
+    background-color: #ff990040;
+    cursor: pointer;
+}
+
+.cartaoOcupado:hover {
+    transition-duration: .5s;
+    background-color: #ff000040;
+    cursor: pointer;
+}
+
+.cartaoDisponivel:hover {
+    transition-duration: .5s;
+    background-color: #04ea0440;
+    cursor: pointer;
+}
+
+/* ICONE DE STATUS DO RAMAL */
+
+.pausa {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff9900;
+}
+
+.ocupado {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff0000;
+}
+
+.chamando {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    animation: piscar 1s linear infinite;
+}
+
+.disponivel {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #04ea04;
+}
+
+.indisponivel {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #858585;
+}
+
+.icone-posicao {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@keyframes piscar {
+    50% {
+        opacity: 0;
+    }
+}
